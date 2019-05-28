@@ -27,8 +27,7 @@ github:
   repo:           https://github.com/gmlunesa/blog/
 
 # Site Owner configuration
-
- owner:
+owner:
   name: Goldy Mariz Lunesa
   avatar: avatar.jpg
   job: "Software Engineer"
@@ -63,4 +62,4 @@ github:
   telegram: #username
 
 
- github: [metadata]
+github: [metadata]
