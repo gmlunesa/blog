@@ -100,6 +100,12 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
+.sidebar-nav-icon {
+	margin-bottom: 1rem;
+	font-size: 30px;
+	text-align: center;
+}
+
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
