@@ -6,7 +6,7 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            @gmlunesa
+title:            gmlunesa
 tagline:          'by Goldy Mariz Lunesa'
 description:      'This is my personal blog. May include some nonsense ramblings. You have been warned.'
 url:              "http://gmlunesa.github.io"
