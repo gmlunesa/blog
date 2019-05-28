@@ -13,7 +13,6 @@ title: Tags
 	</p>
 </div>
 
-<hr size=20>
 
 <h2 class="page-heading">Posts with #tag</h2>
 {% for tag in site.tags %}

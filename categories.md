@@ -13,7 +13,6 @@ title: Categories
 	</p>
 </div>
 
-<hr size=20>
 
 <h2 class="page-heading">Posts with Category</h2>
 {% for category in site.categories %}
