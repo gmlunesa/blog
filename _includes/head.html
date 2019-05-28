@@ -17,6 +17,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ site.description }}">
   <meta name="keywords" content="Goldy Mariz Lunesa, Goldy Mariz, Goldy Lunesa, gmlunesa, gclunesa, developer, software engineer, Twitter, Github, Google, Gmail">
+  
+    <!-- Twitter cards metadatas -->
+  <meta name="twitter:card" content="https://raw.githubusercontent.com/gmlunesa/gmlunesa.github.io/master/dp.jpg">
+  <meta name="twitter:site" content="@gmlunesa">
+  <meta name="twitter:creator" content="@gmlunesa">
+  <meta name="twitter:image:src" content="https://raw.githubusercontent.com/gmlunesa/gmlunesa.github.io/master/dp.jpg">
+
+   {% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }}">
+  {% else %}
+  <meta name="twitter:title" content="{{ site.title }}">
+  {% endif %}
+
+   {% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  {% else %}
+  <meta name="twitter:url" content="{{ site.url }}">
+  {% endif %}
+
+   {% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+  {% endif %}
+
+   {% if page.image %}
+  <meta name="twitter:image:src" content="{{ site.url }}{{ image }}">
+  {% else %}
+  <meta name="twitter:image:src" content="https://raw.githubusercontent.com/gmlunesa/gmlunesa.github.io/master/dp.jpg">
+
+   {% endif %}
+
+   <!-- Open Graph data -->
+
+   <meta content="{{ site.title }}" property="og:site_name">
+
+   {% if page.title %}
+  <meta content="{{ page.title }}" property="og:title">
+  {% else %}
+  <meta content="{{ site.title }}" property="og:title">
+  {% endif %}
+
+   {% if page.title %}
+  <meta content="article" property="og:type">
+  {% else %}
+  <meta content="website" property="og:type">
+  {% endif %}
+
+   {% if page.url %}
+  <meta content="{{ site.baseurl }}{{ page.url }}" property="og:url">
+  {% else %}
+  <meta content="{{ site.baseurl }}{{ page.url }}" property="og:url">
+  {% endif %}
+
+   {% if page.image %}
+  <meta content="{{ site.baseurl }}{{ page.image }}" property="og:image">
+  {% else %}
+  <meta content="https://raw.githubusercontent.com/gmlunesa/gmlunesa.github.io/master/dp.jpg" property="og:image">
+  {% endif %}
+
+   {% if page.content %}
+  <meta content="{{ page.description }}" property="og:description">
+  {% else %}
+  <meta content="{{ site.description }}" property="og:description">
+  {% endif %}
+
+   {% if page.date %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+  <meta content="{{ site.baseurl }}/about/" property="article:author">
+  {% endif %}
+
+   {% if page.categories %}
+  {% for category in page.categories limit:1 %}
+  <meta content="{{ category }}" property="article:section">
+  {% endfor %}
+  {% endif %}
+
+   {% if page.tags %}
+  {% for tag in page.tags %}
+  <meta content="{{ tag }}" property="article:tag">
+  {% endfor %}
+  {% endif %}
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
