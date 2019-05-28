@@ -32,25 +32,25 @@ layout: default
     </span>
   </div>
 
-   <br>
+   <!-- <br> -->
 
-   <!-- Twitter -->
-  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="vchrombie" data-show-count="false" data-related="vchrombie">Tweet</a>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+   Twitter
+  <!-- <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="vchrombie" data-show-count="false" data-related="vchrombie">Tweet</a> -->
+  <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+  <!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
 
-   <!-- Facebook -->
-  <a class="fb-share-button" data-href="{{ site.baseurl }}/{{page.url}}" data-layout="button" data-size="large" style="position: relative; top: -8px; left: 33px;">Share</a>
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=192029631349159&autoLogAppEvents=1';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+   Facebook
+  <!-- <a class="fb-share-button" data-href="{{ site.baseurl }}/{{page.url}}" data-layout="button" data-size="large" style="position: relative; top: -8px; left: 33px;">Share</a> -->
+  <!-- <div id="fb-root"></div> -->
+  <!-- <script>(function(d, s, id) { -->
+    <!-- var js, fjs = d.getElementsByTagName(s)[0]; -->
+    <!-- if (d.getElementById(id)) return; -->
+    <!-- js = d.createElement(s); js.id = id; -->
+    <!-- js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=192029631349159&autoLogAppEvents=1'; -->
+    <!-- fjs.parentNode.insertBefore(js, fjs); -->
+  <!-- }(document, 'script', 'facebook-jssdk'));</script> -->
 
-   <br>
+   <!-- <br> -->
 
    {% if page.image %}
   <p align="center">
@@ -63,38 +63,43 @@ layout: default
 </div>
 
 <div class="related">
-  <!-- <h2>Related Posts</h2> -->
-  <!-- <ul class="related-posts"> -->
+  <h2>Recent Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+    <!-- <h2>Recent Posts</h2> -->
+  <!-- <ul class="related-posts">	    <div> -->
     <!-- {% for post in site.related_posts limit:3 %} -->
-      <!-- <li> -->
-        <!-- <h3> -->
-          <!-- <a href="{{ post.url }}"> -->
-            <!-- {{ post.title }} -->
-            <!-- <small>{{ post.date | date_to_string }}</small> -->
-          <!-- </a> -->
-        <!-- </h3> -->
-      <!-- </li> -->
-    <!-- {% endfor %} -->
-  <!-- </ul> -->
-    <h2>Recent Posts</h2>
-  <ul class="related-posts">	    <div>
-    {% for post in site.related_posts limit:3 %}	    <ul class="related-posts">
-      <li>	      {% for post in site.related_posts limit:3 %}
-        <h3>	        <li>
-          <a href="{{ post.url }}">	          <p>
-            {{ post.title }}	            <a href="{{ site.baseurl }}{{ post.url }}">
-            <small>{{ post.date | date_to_string }}</small>	              {{ post.title }}
-          </a>	              <small>{{ post.date | date_to_long_string }}</small>
-        </h3>	            </a>
-      </li>	          </p>
-    {% endfor %}	        </li>
-  </ul>	      {% endfor %}
-    </ul>
-  </div>
+	<!-- <ul class="related-posts"> -->
+      <!-- <li>	      {% for post in site.related_posts limit:3 %} -->
+        <!-- <h3>	        <li> -->
+          <!-- <a href="{{ post.url }}">	          <p> -->
+            <!-- {{ post.title }}	            <a href="{{ site.baseurl }}{{ post.url }}"> -->
+            <!-- <small>{{ post.date | date_to_string }}</small>	              {{ post.title }} -->
+          <!-- </a>	              <small>{{ post.date | date_to_long_string }}</small> -->
+        <!-- </h3>	            </a> -->
+      <!-- </li>	          </p> -->
+    <!-- {% endfor %}	        </li> -->
+  <!-- </ul>	      {% endfor %} -->
+    <!-- </ul> -->
+  <!-- </div> -->
   <div class="PageNavigation">
     {% if page.previous.url %}
       <a class="prev" href="{{ site.baseurl }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
     {% endif %}
+	&#128214;
+	&#128214;
+	&#128214;
+
     {% if page.next.url %}
       <a class="next" href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
     {% endif %}
