@@ -105,6 +105,7 @@ a.sidebar-nav-item:focus {
 }
 .sidebar-nav-icon a {
 	color: #FAFAFA;
+	margin: 0 20px;
 }
 
 .sidebar-nav-icon a:hover {
