@@ -79,7 +79,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: "Montserrat", serif;
   font-size: 3rem;
 }
 
@@ -101,9 +101,18 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-nav-icon {
-	margin-bottom: 1rem;
-	font-size: 30px;
 	text-align: center;
+}
+.sidebar-nav-icon a {
+	color: #FAFAFA;
+}
+
+.sidebar-nav-icon a:hover {
+	color: #a9c5e5;
+}
+
+.sidebar-nav-icon i {
+	font-size: 4em;
 }
 
 /* Sticky sidebar
