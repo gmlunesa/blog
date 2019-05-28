@@ -4,23 +4,63 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+title:            @gmlunesa
+tagline:          'by Goldy Mariz Lunesa'
+description:      'This is my personal blog. May include some nonsense ramblings. You have been warned.'
+url:              "http://gmlunesa.github.io"
+baseurl:          "/blog"
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Goldy Mariz Lunesa'
+  url:            https://gmlunesa.github.io/
 
 paginate:         5
+plugins:          [jekyll-paginate]
 
 # Custom vars
+appname:          blog
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/gmlunesa/blog/
+
+# Site Owner configuration
+
+ owner:
+  name: Goldy Mariz Lunesa
+  avatar: avatar.jpg
+  job: "Software Engineer"
+  bio: "Software Engineer from the Philippines"
+  email: gmlunesa@gmail.com
+  disqus-shortname: gmlunesa
+  twitter: gmlunesa
+  facebook: gmlunesa
+  google:
+    plus:
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: gmlunesa
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin:  gmlunesa
+  xing:
+  instagram:
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
+  telegram: #username
+
+
+ github: [metadata]
